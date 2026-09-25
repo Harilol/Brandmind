@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>BrandMind</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'style.css' %}?v=2" />
+</head>
+<body>
+  <header>
+    <h1>BrandMind</h1>
+    <p>Turn a rough idea into a launch-ready brand.</p>
+  </header>
+
+  <section id="stages">
+    <!-- Stage cards appear here -->
+  </section>
+
+  <section id="input-section">
+    <textarea id="idea" placeholder="e.g. I want an app that helps teachers track student progress..."></textarea>
+    <textarea id="clarifications" placeholder="Anything else? (audience, pricing, platform...)"></textarea>
+    <button id="run-btn">Run BrandMind →</button>
+  </section>
+
+  <script src="{% static 'app.js' %}?v=2"></script>
+</body>
+</html>
